@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Alris</string>
+    <string name="alris_ai">ALRIS.ai</string>
+    <string name="alris_is_a_next_gen_ai_chatbot_powered_by_google_s_gemini_model_designed_by_kunal_a_b_tech_2nd_year_electrical_engineering_student_at_nit_silchar_it_delivers_human_like_conversations_adapting_to_your_style_length_and_language_making_every_interaction_feel_natural_and_intuitive_alris_stands_at_the_forefront_of_the_ai_revolution_promoting_innovation_while_encouraging_responsible_ai_use_it_s_fast_smart_and_personalized_built_for_the_future_of_conversation">Alris is a next-gen AI chatbot powered by Google’s Gemini model, designed by Kunal, a B.Tech 2nd-year Electrical Engineering student at NIT Silchar. It delivers human-like conversations, adapting to your style, length, and language — making every interaction feel natural and intuitive. Alris stands at the forefront of the AI revolution, promoting innovation while encouraging responsible AI use. It’s fast, smart, and personalized — built for the future of conversation.</string>
+    <string name="hello">Hello</string>
+    <string name="hint">hint</string>
+    <string name="enter_the_text">Enter the text</string>
+    <string name="send">Send</string>
+</resources>

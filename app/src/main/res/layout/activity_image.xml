@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".image_activity">
+
+    <!-- Hello Bar -->
+    <LinearLayout
+        android:id="@+id/hello_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hello"
+            android:textSize="30sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/alexandria_bold" />
+    </LinearLayout>
+
+    <!-- RecyclerView -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView_image"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_below="@id/hello_bar"
+        android:layout_above="@id/message_bar"
+        android:layout_margin="10dp"
+        tools:listitem="@layout/chatrightitem"/>
+
+    <!-- Message Bar -->
+    <RelativeLayout
+        android:id="@+id/message_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:padding="8dp">
+
+        <!-- Send Button -->
+        <ImageView
+            android:id="@+id/sendbtn"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:padding="8dp"
+            android:src="@drawable/send"
+            android:contentDescription="Send" />
+
+        <!-- Input Text Field -->
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:id="@+id/input_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/sendbtn"
+            android:layout_marginBottom="20dp"
+            android:layout_centerVertical="true"
+            app:boxBackgroundMode="outline">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/user_msg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/enter_the_text"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:paddingStart="12dp"
+                android:paddingTop="12dp"
+                android:paddingBottom="12dp"
+                android:minHeight="48dp"
+                android:imeOptions="actionSend"
+                android:inputType="text"
+                android:fontFamily="@font/alexandria_bold"
+                android:focusable="true"
+                android:background="@drawable/custom_shape"
+                android:focusableInTouchMode="true" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </RelativeLayout>
+</RelativeLayout>

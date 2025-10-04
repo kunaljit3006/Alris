@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="hello_text" type="id" />
+    <item name="hello_layout" type="id" />
+    <item name="recyclerView" type="id" />
+    <item name="edittext_layout" type="id" />
+    <item name="constraintLayout" type="id" />
+    <item name="sendbtn" type="id" />
+    <item name="user_msg" type="id" />
+</resources>
